@@ -10,14 +10,14 @@
  - poly_n=5,
  - poly_sigma=1.2
 2. Lucas–Kanade
- - maxCorners=200 — максимальное число ключевых точек
- - qualityLevel=0.01 — минимальная «качество» точки для выбора
- - minDistance=30 — минимальное расстояние между точками
+ - maxCorners=200 
+ - qualityLevel=0.01 
+ - minDistance=30 
 lk_params:
- - winSize=(15,15) — окно для поиска соответствия
- - maxLevel=2 — количество уровней пирамиды
+ - winSize=(15,15)
+ - maxLevel=2
  - criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03)
- - 
+   
 ### Фильтрация и сглаживание
 1. Сглаживание выполнялось через свёртку: cv2.filter2D(dx_array, -1, kernel) и np.convolve для tx/ty. Цель: уменьшить резкие скачки смещения и сгладить траекторию камеры.
 2. Warping видео:
