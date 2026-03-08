@@ -2,7 +2,7 @@
 Выбрал вариант А, реализовал Farneback и  Lucas–Kanade, чтобы разобраться в том и том.
 
 ### Методы: 
-1. Farnebäck
+1. Farneback
  - pyr_scale=0.5
  - levels=3
  - winsize=15
